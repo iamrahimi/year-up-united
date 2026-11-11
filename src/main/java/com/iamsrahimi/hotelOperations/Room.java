@@ -1,6 +1,7 @@
 package com.iamsrahimi.hotelOperations;
 
 public class Room {
+
     private int numberOfBeds;
     private double price;
     private boolean occupied;
