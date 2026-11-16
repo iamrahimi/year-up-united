@@ -32,6 +32,7 @@ A Java project for tracking books and their availability, including checking boo
 ```text
 java-projects/
 ├── hotel-operations/
+├── Car-dealership/
 ├── testing-file/
 └── README.md
 ```
