@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.iamsrahimi.carDealership.ContractSalesManger.sellLeaseCar;
 import static java.lang.System.exit;
 
 public class Main {
@@ -27,8 +28,9 @@ public class Main {
         System.out.println("1. Show Cars");
         System.out.println("2. Add Car");
         System.out.println("3. Find Car By");
+        System.out.println("4. Sell/Lease Car");
         System.out.println("0. Exit");
-        System.out.println("Choose your option [0-3]:");
+        System.out.println("Choose your option [0-4]:");
 
         int choice = input.nextInt(); input.nextLine();
         switch (choice) {
@@ -44,9 +46,13 @@ public class Main {
                 addNewCar();
                 break;
 
-                case 3:
-                    CarFilter.filterCarBy();
-                    break;
+            case 3:
+                CarFilter.filterCarBy();
+                break;
+
+            case 4:
+                sellLeaseCar();
+                break;
 
             default:
                 System.out.println("Invalid choice");

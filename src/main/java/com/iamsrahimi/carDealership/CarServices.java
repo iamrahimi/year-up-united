@@ -56,7 +56,7 @@ public class CarServices {
         for  (Car car : Main.cars) {
             System.out.println(car.toString());
         }
-        optionMenu();
+//        optionMenu();
 
     }
 
