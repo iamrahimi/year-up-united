@@ -1,0 +1,25 @@
+package com.iamsrahimi.personalassetmanager.model;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public class Asset {
+    private String description;
+    private LocalDate dateAcquired;
+    private BigDecimal originalCost;
+
+    public Asset(String description, LocalDate dateAcquired, BigDecimal originalCost) {
+        this.description = description;
+        this.dateAcquired = dateAcquired;
+        this.originalCost = originalCost;
+    }
+
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
+
+    public LocalDate getDateAcquired() { return dateAcquired; }
+    public void setDateAcquired(LocalDate dateAcquired) { this.dateAcquired = dateAcquired; }
+
+    public BigDecimal getOriginalCost() { return originalCost; }
+    public void setOriginalCost(BigDecimal originalCost) { this.originalCost = originalCost; }
+}
